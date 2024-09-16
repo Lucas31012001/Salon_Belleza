@@ -1,0 +1,64 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.dark-mode {
+    .cuerpo{
+        background-color: darken(v.$grisOscuro, 10);
+    }
+    
+    .icono p{
+        color: v.$blanco;
+    }
+
+    .icono h3{
+        color: v.$blanco;
+    }
+
+    .sobre-nosotros h1{
+        color: v.$blanco;
+    }
+
+    .texto-entrada a{
+        color: v.$blanco;
+    }
+    
+    .seccion-inferior h3{
+        color: v.$blanco;
+    }
+
+    .texto-entrada p{
+        color: v.$blanco;
+    }
+
+    .sobre-nosotros h1{
+        color: v.$blanco;
+    }
+
+    .texto-nosotros blockquote{
+        color: v.$blanco;
+    }
+
+    .texto-nosotros p{
+        color: v.$blanco;
+    }
+
+    .blog2 h1{
+        color: v.$blanco;
+    }
+
+    .resumen-propiedad p{
+        color: v.$blanco;
+    }
+
+    .informacion-meta{
+        color: v.$blanco;
+    }
+
+    .cuerpo-donde-estamos h3{
+        color: v.$blanco;
+    }
+
+    .cuerpo-donde-estamos p{
+        color: v.$blanco;
+    }
+}

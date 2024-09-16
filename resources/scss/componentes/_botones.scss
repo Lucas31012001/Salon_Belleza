@@ -1,0 +1,18 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.boton{
+    @include m.boton(v.$azul, v.$blanco);
+}
+.boton-eliminar{
+    @include m.boton(v.$rojo, v.$blanco);
+}
+.boton-amarillo{
+    @include m.boton(v.$amarillo, v.$blanco);
+    display: inline-block;
+    width: auto; /* Elimina cualquier ancho fijo */
+    padding: 1rem 3rem;
+    margin-top: calc(v.$separacion / 2);
+    font-size: 1.5rem;
+    padding: 1.8rem 4rem;
+}

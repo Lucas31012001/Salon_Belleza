@@ -1,0 +1,46 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.blog2{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.blog2 h1{
+    color: v.$negro;
+    font-size: 3.8rem;
+    font-family: Lato, sans-serif;
+    font-weight: 20;
+    margin: 4.5rem 0;
+    text-align: center;
+}
+
+.imagen-blog2{
+    height: 32rem;
+    width: 100%;
+}
+
+.imagen-blog3{
+    height: 60rem;
+    width: 50rem;
+}
+
+.resumen-propiedad{
+    p{
+        color: v.$negro;
+    }
+}
+
+.div-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parrafo-blog{
+    text-align: justify;
+}
+
+.imagen-blog-index{
+    text-align: center;
+}

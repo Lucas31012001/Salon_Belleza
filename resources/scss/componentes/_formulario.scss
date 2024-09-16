@@ -1,0 +1,60 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.formulario{
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    label {
+        margin-bottom: 1rem; // Espacio entre el label y el input en pantallas pequeñas
+    }
+
+    input {
+        width: 100%; // Asegura que el input ocupe todo el ancho del contenedor
+        border: none;
+        padding: calc(v.$separacion / 4);
+        border-radius: 1rem;
+
+        &:disabled {
+            background-color: lighten(v.$negro, 30%);
+            color: v.$blanco;
+            cursor: not-allowed;
+        }
+    }
+
+    button {
+        width: auto; // Asegura que el botón también ocupe todo el ancho
+        margin-top: 1rem; // Espacio entre el input y el botón
+    }
+
+    // Estilos específicos para tabletas
+    @include m.tablet {
+        flex-direction: row; // Cambia la dirección a fila en tabletas
+        align-items: center; // Alinea los elementos al centro
+
+        label {
+            flex: 0 0 20rem; // El label ocupa 20rem
+            margin-bottom: 0; // Elimina el margen inferior ya que los elementos están en fila
+        }
+
+        input {
+            flex: 1;
+            width: auto; // Permite que el input crezca según el espacio disponible
+        }
+
+        button {
+            width: auto; // Permite que el botón solo ocupe el espacio necesario
+            margin-left: 1rem; // Añade espacio entre el input y el botón
+            margin-top: 0; // Elimina el margen superior ya que están en fila
+        }
+    }
+}
+
+

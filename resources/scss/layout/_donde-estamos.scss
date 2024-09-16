@@ -1,0 +1,47 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.cuerpo-donde-estamos{
+    h3{
+        color: v.$negro;
+        font-family: v.$fuente_secundaria;
+        font-weight: v.$delgada;
+        margin-top: 9rem;
+    }
+
+    p{
+        color: v.$negro;
+        font-family: v.$fuente_secundaria;
+        text-align: center;
+    }
+
+    a{
+        font-family: v.$fuente_secundaria;
+    }
+}
+
+.address2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        margin: 0
+    }
+} 
+
+.photos2{
+    img{
+        height: 35rem;
+    }
+    @include m.tablet{
+        @include m.grid(2, 2rem);
+    }
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
