@@ -17,6 +17,7 @@
                         <a href="/nosotros">Nosotros</a>
                         <a href="/blog">Blog</a>
                         <a href="/donde-estamos">¿Dónde estamos?</a>
+                        <a href="/contacto">Contacto</a>
                         <a href="/login">Iniciar Sesión</a>
                         <a href="/crear-cuenta">Crear Cuenta</a>
                     </nav>
@@ -137,6 +138,7 @@
                 <a href="/nosotros">Nosotros</a>
                 <a href="/blog">Blog</a>
                 <a href="/donde-estamos">¿Dónde estamos?</a>
+                <a href="/contacto">Contacto</a>
                 <a href="/login">Iniciar Sesión</a>
                 <a href="/crear-cuenta">Crear Cuenta</a>
             </nav>

@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 function iniciarApp() {
   darkmode();
+  eventListeners();
 }
 function darkmode() {
   var prefiereDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
@@ -28,6 +29,22 @@ function darkmode() {
   botonDarkMode.addEventListener('click', function () {
     document.body.classList.toggle('dark-mode');
   });
+}
+function eventListeners() {
+  var mobileMenu = document.querySelector('.mobile-menu');
+  mobileMenu.addEventListener('click', navegacionResponsive);
+}
+function navegacionResponsive() {
+  var navegacion = document.querySelector('.navegacion');
+  navegacion.classList.toggle('mostrar2');
+  /* 
+  toogle es lo mismo que poner esto:
+  if(navegacion.classList.contains('mostrar')){
+      navegacion.classList.remove('mostrar);
+  } else {
+      navegacion.classList.add('mostrar');
+  }
+  */
 }
 /******/ })()
 ;

@@ -939,6 +939,12 @@ p {
   }
 }
 
+.mostrar2 {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
 .logotipo {
   width: 15rem;
   filter: invert(100%);
@@ -947,7 +953,7 @@ p {
 .sobre-nosotros h1 {
   color: #1a1b15;
   font-size: 3.8rem;
-  font-family: Lato, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 20;
   margin: 4.5rem 0;
   text-align: center;
@@ -963,7 +969,7 @@ p {
 .icono h3 {
   text-transform: uppercase;
   color: #1a1b15;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 20;
   text-align: center;
   margin: 2.5rem 0;
@@ -971,7 +977,7 @@ p {
 .icono p {
   color: #1a1b15;
   line-height: 1.5;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -1018,7 +1024,7 @@ p {
 }
 .seccion-inferior h3 {
   color: #1a1b15;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
   margin: 2.5rem 0;
 }
@@ -1101,7 +1107,7 @@ p {
   border-radius: 2rem;
 }
 .testimonial blockquote, #extraTestimonial blockquote, #extraTestimonial-2 blockquote, #extraTestimonial-3 blockquote, #extraTestimonial-4 blockquote {
-  text-align: justify;
+  text-align: center;
 }
 .testimonial p, #extraTestimonial p, #extraTestimonial-2 p, #extraTestimonial-3 p, #extraTestimonial-4 p {
   text-align: right;
@@ -1205,7 +1211,7 @@ h1 {
 .blog2 h1 {
   color: #1a1b15;
   font-size: 3.8rem;
-  font-family: Lato, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 20;
   margin: 4.5rem 0;
   text-align: center;
@@ -1241,17 +1247,17 @@ h1 {
 
 .cuerpo-donde-estamos h3 {
   color: #1a1b15;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 300;
   margin-top: 9rem;
 }
 .cuerpo-donde-estamos p {
   color: #1a1b15;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 .cuerpo-donde-estamos a {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .address2 {
@@ -1279,6 +1285,53 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
+}
+
+.formulario2 {
+  background-color: #FFFFFF;
+  margin: -5rem auto;
+  width: 70%;
+  padding: 5rem;
+}
+.formulario2 .boton-formulario {
+  width: 30%;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .formulario2 .boton-formulario {
+    width: 20%;
+  }
+}
+
+.campo__label {
+  color: #1a1b15;
+  width: 20rem;
+}
+
+.campo__field {
+  flex: 1; /* Hace que el input ocupe todo el espacio restante */
+  border: 1px solid #989898;
+}
+
+.campo2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .campo2 {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contacto-bg {
+  background-image: url(/images/tienda-ropa.jpeg?ac364a19db9dc53746b6dc49fb00e6b5);
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .formulario {
@@ -1414,6 +1467,33 @@ h1 {
 }
 .boton-amarillo:hover {
   background-color: #af6907;
+  cursor: pointer;
+}
+
+.boton-formulario {
+  background-color: #0da6f3;
+  padding: 1.5rem 4rem;
+  color: #FFFFFF;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  font-weight: 700;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin: 5rem 0;
+}
+@media (min-width: 768px) {
+  .boton-formulario {
+    width: auto;
+  }
+}
+.boton-formulario:hover {
+  background-color: #0a85c3;
   cursor: pointer;
 }
 

@@ -133,6 +133,12 @@
     }
 }
 
+.mostrar2 {
+    visibility: visible; //visibility visible y visibility hidden permiten animar mientras que display block y display none no lo permite
+    opacity: 1;
+    height: auto;
+}
+
 .logotipo{
     width: 15rem;
     filter: invert(100%); // Invierte el color que tiene aplicado
@@ -141,7 +147,7 @@
 .sobre-nosotros h1{
     color: v.$negro;
     font-size: 3.8rem;
-    font-family: Lato, sans-serif;
+    font-family: v.$fuente_principal;
     font-weight: 20;
     margin: 4.5rem 0;
     text-align: center;
@@ -156,7 +162,7 @@
     h3{
         text-transform: uppercase;
         color: v.$negro;
-        font-family: v.$fuente_secundaria;
+        font-family: v.$fuente_principal;
         font-weight: 20;
         text-align: center;
         margin: 2.5rem 0;
@@ -164,7 +170,7 @@
     p{
         color: v.$negro;
         line-height: 1.5;
-        font-family: v.$fuente_secundaria;
+        font-family: v.$fuente_principal;
     }
 }
 
@@ -212,7 +218,7 @@
 
     h3{
         color: v.$negro;
-        font-family: v.$fuente_secundaria;
+        font-family: v.$fuente_principal;
         font-weight: 200;
         margin: 2.5rem 0;
     }
@@ -291,7 +297,7 @@
     border-radius: 2rem;
 
     blockquote{
-        text-align: justify;
+        text-align: center;
     }
 
     p{

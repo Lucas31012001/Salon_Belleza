@@ -18,6 +18,8 @@ Route::get('/entrada', [PaginasController::class, 'entrada']);
 Route::get('/entrada2', [PaginasController::class, 'entrada2']);
 Route::get('/entrada3', [PaginasController::class, 'entrada3']);
 Route::get('/entrada4', [PaginasController::class, 'entrada4']);
+Route::get('/contacto', [PaginasController::class, 'contacto']);
+Route::post('/contacto', [PaginasController::class, 'contacto']);
 Route::get('/donde-estamos', [LocationController::class, 'index']);
 Route::get('/google-maps', [LocationController::class, 'maps']);
 

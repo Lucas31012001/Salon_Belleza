@@ -1,0 +1,46 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.formulario2{
+    background-color: v.$blanco;
+    margin: -5rem auto;
+    width: 70%;
+    padding: 5rem;
+    .boton-formulario{
+        @include m.tablet{
+            width: 20%;
+        }
+        width: 30%;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+.campo__label{
+    color: v.$negro;
+    width: 20rem; // El label ocupa 20rem
+}
+
+.campo__field{
+    flex: 1; /* Hace que el input ocupe todo el espacio restante */
+    border: 1px solid v.$grisClaro;
+}
+
+.campo2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @include m.tablet {
+        flex-direction: row; // Cambia la dirección a fila en tabletas
+        align-items: center; // Alinea los elementos al centro
+    }
+}
+
+.contacto-bg {
+    background-image: url(../../img/tienda-ropa.jpeg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

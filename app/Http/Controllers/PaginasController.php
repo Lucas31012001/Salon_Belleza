@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use App\Models\Contacto;
+
+
 class PaginasController extends Controller {
     public static function index(){
 
@@ -44,6 +48,33 @@ class PaginasController extends Controller {
     public static function entrada4(){
         return view('paginas.entrada4', [
 
+        ]);
+    }
+
+    public static function contacto(Request $request){
+        $alertas = [];
+
+        if ($request->isMethod('post')) {
+            $contacto = new Contacto($request->all()); 
+            $alertas = $contacto->validar();
+
+            if (empty($alertas)) {
+                // Guarda el contacto en la base de datos
+                $resultado = $contacto->guardar();
+
+                if($resultado){
+                    Contacto::setAlerta('exito', 'Hemos recibido tu solicitud correctamente. En breve, uno de nuestros asesores se pondrá en contacto contigo para atender tu consulta. Gracias por tu interés.');
+                } else {
+                    Contacto::setAlerta('error', 'No se pudo guardar el contacto.');
+                }
+
+                // Obtener todas las alertas configuradas
+                $alertas = Contacto::$alertas;
+            }
+        }
+        
+        return view('paginas.contacto', [
+            'alertas' => $alertas
         ]);
     }
 }

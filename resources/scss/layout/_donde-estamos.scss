@@ -4,19 +4,19 @@
 .cuerpo-donde-estamos{
     h3{
         color: v.$negro;
-        font-family: v.$fuente_secundaria;
+        font-family: v.$fuente_principal;
         font-weight: v.$delgada;
         margin-top: 9rem;
     }
 
     p{
         color: v.$negro;
-        font-family: v.$fuente_secundaria;
+        font-family: v.$fuente_principal;
         text-align: center;
     }
 
     a{
-        font-family: v.$fuente_secundaria;
+        font-family: v.$fuente_principal;
     }
 }
 
